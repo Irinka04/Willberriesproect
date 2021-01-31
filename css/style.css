@@ -1,0 +1,518 @@
+/*  */
+* {
+  box-sizing: border-box;
+}
+
+/* убираем отступы для bodi всего */
+/* 37:32 */
+body {
+  margin: 0;
+  /* весь шрифт на сате */
+  font-family: 'Lato',
+    sans-serif;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+/* container {
+  margin: 20px 20px;
+} */
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-link {
+  text-decoration: none;
+  font-family: 'Lato',
+    sans-serif;
+  color: #939699;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #4592FF;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-family: 'Lato',
+    sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-icon {
+  margin-right: 10px;
+}
+
+.button-icon:last-child {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+/* *************СЛАЙДЫ*************** */
+.slide {
+  /* отступ с верху */
+  padding-top: 90px;
+  /* отступ снизу */
+  padding-bottom: 110px;
+  min-height: 568px;
+
+}
+
+/* Слайд 1 с фоновым цветом */
+.slide-1 {
+  /* Свойство background может содержать в себе несколько настроек */
+  /* 
+  ghbvth цвет всемуфону и 
+  url-путь к кортинке no-repeat отключает чвойство повторения которое стоит по умолчанию пояснения *****
+  ***background: #B4D1E0 url('../img/slide-image-1.png') no-repeat top right 20%;***
+  top-указывает по вертикали сверху .,
+  right - справой части, 
+  20% отступ от правого края обозначаем 20%*/
+  background: #B4D1E0 url('../img/slide-image-1.png') no-repeat top right 10%;
+
+}
+
+.slide-2 {
+
+  background: #eb77db url('../img/slide-image-1.png') no-repeat top right 10%;
+
+}
+
+.slide-3 {
+
+  background: #ebe977 url('../img/slide-image-1.png') no-repeat top right 10%;
+
+}
+
+/* лейбл фоновый цвет и скругление*/
+.label {
+  background-color: #3DC47E;
+  border-radius: 3px;
+  /* отступы сверху-снизу и по краям 12 */
+  padding: 5px 12px;
+  /* цвет текста */
+  color: #fff;
+  /* размер шрифта в лейболе */
+  font-size: 12px;
+  line-height: 15px;
+
+}
+
+/* Текст заголовка 1 слайда*/
+.slide-title {
+  color: #262D33;
+  /* размер текста заголовка слайда */
+  font-size: 55px;
+  line-height: 70px;
+  /* шрифт по ссылке подключили в html  */
+  font-family: 'Roboto Slab',
+    serif;
+  /* отступ сверху */
+  margin-top: 20px;
+  /* отступ снизу */
+  margin-bottom: 15px;
+
+}
+
+/* оформляем текст */
+.slide-description {
+  color: #4B5157;
+  font-size: 18px;
+  line-height: 30px;
+  /* ограничиваем ширину текста */
+  max-width: 335px;
+  /* отстп вниз */
+  margin-bottom: 40px;
+}
+
+/* кнопка */
+.button-prise {
+  margin-right: 10px;
+}
+
+.slider {
+  position: relative;
+
+}
+
+/* ***Слайд кнопки стрелки */
+.slider {
+  position: relative;
+
+}
+
+.slider-nav {
+  /* позиция абсолют */
+  position: absolute;
+  /* отступ сверху */
+  top: 50%;
+  /* шириа от родителя*/
+  width: 100%;
+  /* обе кнопки стрелки при помощи оси y переместим transform: translateY()*/
+  transform: translateY(-50%);
+  /* параметр z  */
+  z-index: 9;
+}
+
+
+
+/* оформление самих кнопок стрелок */
+.slider-button {
+  /* цвет ставим прозрачный transparent*/
+  background-color: transparent;
+  /* отключаем обводку */
+  border: none;
+  /* меняем курсор */
+  cursor: pointer;
+}
+
+/* ****Карточка после слайдера */
+.card {
+  /* высота для карточки */
+  min-height: 370px;
+  /* округление краев */
+  border-radius: 10px;
+  /* отступ внутри с верху до текста */
+  padding-top: 60px;
+  /* отступ внутри с лева */
+  padding-left: 46px;
+  /* с права */
+  padding-right: 46px;
+  /* отступ снизу */
+  padding-bottom: 80px;
+
+
+}
+
+.card-1 {
+  /* 1.фоновый цвет фото  
+  2.url на картинку 
+  3.no-repeat чтобы не повторялась 
+  4.top -приклеиваем к верхнему
+  5.right правому краю*/
+
+  background: #E3E2E3 url('/img/cart-image-1.jpg') no-repeat top right;
+  /* полное заполнение карточки */
+  background-size: cover;
+
+}
+
+.card-2 {
+  background: #000 url('/img/cart-image-2.png') no-repeat top right;
+  /* полное заполнение карточки */
+  background-size: cover;
+}
+
+.card-3 {
+  padding-top: 35px;
+  background: #CCD5E6 url('/img/cart-image-3.png') no-repeat top right 0;
+  /* не растягивалась на всю карточки */
+  background-size: contain;
+
+}
+
+.card-4 {
+  padding-top: 35px;
+  padding-left: 25px;
+  background: #FF4F52 url('/img/cart-image-4.png') no-repeat top right;
+  /* полное заполнение карточки */
+  background-size: cover;
+}
+
+
+
+.card-title {
+  /* Оформляем текст заголовка карточки */
+  color: #262D33;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'Roboto Slab',
+    serif;
+  /* ограничиваем ширину заголовка */
+  max-width: 222px;
+
+  /* обнулили отступы */
+  margin: 0;
+}
+
+.card-title.large {
+  min-width: 420px;
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  /* максюширина текста карточки */
+  max-width: 176px;
+  /* цвет текста */
+  color: #4B5157;
+  /* размер шрифта */
+  font-size: 14px;
+  line-height: 20px;
+  /* отступ снизу */
+  margin-bottom: 25px;
+  /* ограничиваем ширину заголовка */
+  max-width: 220px;
+}
+
+.card-text.large {
+  max-width: 320px;
+  /* color: #4B5157; */
+  /* font-size: 14px; */
+  /* line-height: 20px; */
+
+}
+
+.card-prise {
+
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-light {
+  color: #fff;
+  /* Оформляем текст заголовка карточки */
+}
+
+.section-title {
+  color: #262D33;
+  font-family: 'Roboto Slab',
+    serif;
+  /* font-weight: bold; */
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.more {
+  /* отключаем декарирование */
+  text-decoration: none;
+  color: #262D33;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 900;
+  padding: 10px;
+}
+
+/* карточки товара */
+.goods-card {
+  position: relative;
+  /* border: 1px solid #0c0c0c; */
+  /* Засположение внутри карточки текста поцентру */
+  text-align: center;
+  /* щтступ свезчу */
+  padding-top: 30px;
+  /* отступ снизу */
+  padding-bottom: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+/* инфа про новинки акции */
+
+.goods-card .lable {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+
+
+}
+
+/* фото товара */
+
+.goods-image {}
+
+/* Заголовок карточки */
+
+.goods-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: 'Roboto Slab',
+    serif;
+  color: #262D33;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* Текст */
+
+.goods-description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+/* цена */
+.goods-prise {
+  color: #262D33;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+/* ********footer-menu */
+.footer {
+  background: #8F79D4;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  color: #fff;
+
+}
+
+.footer-menu {
+  /* убираем точки декорации */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* в менюотступы друг от друга но кроме последнего */
+.footer-menu-item:not(:last-child) {
+  /* отступы друг от друга */
+  margin-right: 20px;
+}
+
+.footer-menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* footer-social  */
+.footer-social {
+  display: flex;
+  display: inline;
+
+}
+
+.social-link {
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.footer-text {
+  color: #E7D9FF;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer-line {
+  opacity: 0.5;
+}
+
+.top-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-link-text {
+  margin-right: 15px;
+}
+
+.top-link-text {
+  text-decoration: none;
+
+}
+
+.pai-logo {
+  /* фото логотипы выраниваются относитьльно друг друга */
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media(max-width: 1200px) {
+  .slide-1 {
+    /* картика занимает все пространство */
+    background-color: cover;
+  }
+}
+
+.card-3 {
+  background-size: cover;
+}
+
+@media(max-width: 992px) {
+  .slider-nav {
+    display: none;
+  }
+
+  .slide-title {
+    /* размер шрифта */
+    font-size: 36px;
+    /* высота строки */
+    line-height: 1.4;
+  }
+
+}
+
+@media(max-width: 576px) {
+  .slide-title {
+    /* размер шрифта */
+    font-size: 36px;
+    /* высота строки */
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+
+  .slide-1 {
+    /* картика занимает все пространство */
+    background-color: cover;
+  }
+
+  .card {
+    /* позиция картинки с левого края */
+    background-position: left top;
+
+  }
+
+  .card-4 {
+    /* позиция картинки с левого края */
+    background-position: right top;
+
+  }
+
+  .card {
+    padding: 30px;
+
+    min-height: 300px;
+  }
+
+  /* .swiper-wrapper {
+    transform: translate3d(-392px, 0px, 0px);
+  } */
+}
+
+@media(max-width: 330px) {
+  .slide-1 {
+    /* картика занимает все пространство */
+    background-color: cover;
+
+  }
+}
+
+
+/* 32-17 */
